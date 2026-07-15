@@ -66,7 +66,7 @@ h3 { margin: 0; font-size: 1.4rem; line-height: 1.15; }
 .work-band { background: var(--paper); }
 .section-head { align-items: end; margin-bottom: 42px; }
 .section-head > p { margin: 0; max-width: 560px; color: var(--muted); line-height: 1.65; }
-.project-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.project-grid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 18px; }
 .project-card { border: 1px solid var(--line); border-radius: 8px; background: var(--white); overflow: hidden; }
 .project-card.featured { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0,1.08fr) minmax(360px,.92fr); min-height: 460px; }
 .project-card.featured.reverse .project-image { order: 2; }
@@ -83,7 +83,7 @@ h3 { margin: 0; font-size: 1.4rem; line-height: 1.15; }
 .repo-link { display: inline-flex; align-items: center; gap: 12px; width: fit-content; color: var(--green); font-weight: 800; text-decoration: none; }
 .repo-link span { transition: transform .2s ease; }
 .repo-link:hover span { transform: translateX(4px); }
-.compact { position: relative; min-height: 420px; display: flex; flex-direction: column; padding: 28px; }
+.compact { position: relative; grid-column: span 2; min-height: 420px; display: flex; flex-direction: column; padding: 28px; }
 .compact::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--blue); }
 .compact.accent-red::before { background: var(--red); }
 .compact.accent-green::before { background: var(--green); }
@@ -119,6 +119,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
   .intro-grid, .section-head, .capability-grid, .writing-inner, .contact-grid, .project-card.featured { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
+  .compact { grid-column: auto; }
   .project-card.featured.reverse .project-image { order: 0; }
   .project-image { min-height: 280px; }
   .compact { min-height: 380px; }
