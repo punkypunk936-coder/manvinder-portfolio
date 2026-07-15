@@ -1,6 +1,6 @@
 # Manvinder Arora Portfolio
 
-Recruiter-facing portfolio for Manvinder Arora, covering crypto trading intelligence, publishing automation, live production tooling, market-flow dashboards and operator agents.
+Recruiter-facing portfolio for Manvinder Arora, covering personal systems for crypto trading intelligence, writing automation, live production and daily research.
 
 ## Local Run
 
