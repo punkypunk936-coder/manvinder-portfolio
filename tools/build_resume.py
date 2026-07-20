@@ -212,7 +212,7 @@ def build_resume():
     summary.paragraph_format.line_spacing = 1.06
     set_font(
         summary.add_run(
-            "Crypto-native operator with five years across community, content, growth, marketing and business development. I helped Timeswap grow TVL by about 50%, brought in repeat LPs with roughly $290K in starting capital, helped scale large communities, and later supported FusionX launches tied to $100M+ in 30-day volume. Outside work, I trade onchain, write about markets and build small AI tools that make my own workflows easier."
+            "Crypto-native operator with five years across community, content, growth, marketing and business development. I helped Timeswap grow TVL by about 50%, brought in repeat liquidity providers with roughly $290K in starting capital, helped scale large communities, and later supported FusionX launches tied to $100M+ in 30-day volume. Outside work, I trade onchain, write about markets and build small AI tools that make my own workflows easier."
         ),
         size=8.75,
     )
@@ -243,7 +243,7 @@ def build_resume():
 
     section_heading(doc, "Experience")
     role_header(doc, "FusionX Finance", "https://docs.fusionx.finance/", "Marketing & BD Head", "Jul 2024 - Mar 2026")
-    bullet(doc, "Ran marketing and BD across EVM and SVM products, working with founders, chain teams, KOLs and communities on launches and partner campaigns.")
+    bullet(doc, "Ran marketing and BD across EVM and SVM products, working with founders, chain teams, creators and communities on launches and partner campaigns.")
     bullet(doc, "Helped grow SummitX to 150K+ followers and supported CobaltX campaigns tied to more than $100M in trading volume over 30 days.")
     bullet(doc, "Built direct feedback loops with traders, whales and LPs; turned user friction into clearer content, onboarding and product feedback.")
 
@@ -251,7 +251,7 @@ def build_resume():
     bullet(doc, "Joined through community and product education, then took on content, growth, campaigns and LP relationships as the protocol grew.")
     bullet(doc, "Helped support roughly 50% TVL growth and personally onboarded repeat LPs with about $290K in initial capital ($200K, $60K and $30K).")
     bullet(doc, "Grew and moderated a 50K+ Discord, helped scale X to roughly 50K followers, and ran campaigns that added 2,000+ active users (about 15%) in one month.")
-    bullet(doc, "Worked directly with KOLs and community leaders; wrote threads, FAQs and launch messages that made oracle-less lending easier to understand.")
+    bullet(doc, "Worked directly with creators and community leaders; wrote threads, FAQs and launch messages that made oracle-less lending easier to understand.")
 
     role_header(doc, "Independent", "https://x.com/0xgoodie", "Onchain Trader, Writer & AI Builder", "2021 - Present")
     bullet(doc, "Use Hyperliquid, Lighter, Variational, Nado and Aster as a real trader; received a top-100 Lighter airdrop allocation through sustained product usage.")
@@ -263,19 +263,18 @@ def build_resume():
         doc,
         "Built for my own use",
         [
+            ("Meme Scout Agent", "https://github.com/punkypunk936-coder/meme-scout-agent"),
             ("Crypto Trading Agent", "https://github.com/punkypunk936-coder/crypto-trading-agent"),
             ("X-to-Substack", "https://github.com/punkypunk936-coder/x-to-substack-pipeline"),
-            ("Market Bubble Desk", "https://github.com/punkypunk936-coder/market-bubble-live-desk"),
-            ("AI Digest", "https://github.com/punkypunk936-coder/substack-ai-digest"),
         ],
     )
     linked_list_line(
         doc,
         "Selected writing",
         [
+            ("Perp DEXs: Crypto's clearest PMF", "https://manvinder.substack.com/p/perp-dexs-cryptos-clearest-pmf"),
             ("TradFi became crypto", "https://manvinder.substack.com/p/crypto-didnt-become-tradfi-tradfi"),
-            ("The casino should always be open", "https://manvinder.substack.com/p/the-casino-should-always-be-open"),
-            ("More on Substack", "https://manvinder.substack.com"),
+            ("Community manager", "https://x.com/0xgoodie/status/2075661908217364766"),
         ],
     )
 
@@ -284,7 +283,7 @@ def build_resume():
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(0)
     p.paragraph_format.line_spacing = 1.04
-    set_font(p.add_run("Growth, community, content, GTM and partnerships; LP, whale and KOL relationships; DeFi and perp DEX fluency; product feedback; clear writing; ChatGPT, Codex, Python, Node.js and lightweight automation."), size=8.5)
+    set_font(p.add_run("Growth, community, content, GTM and partnerships; liquidity-provider, whale and creator relationships; DeFi and perp DEX fluency; product feedback; clear writing; AI-assisted workflow design."), size=8.5)
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     doc.save(OUTPUT)
