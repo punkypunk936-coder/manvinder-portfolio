@@ -100,6 +100,12 @@ h3 { margin: 0; font-size: 1.4rem; line-height: 1.15; }
 .writing-inner { align-items: end; }
 .writing-inner p { margin: 0 0 24px; color: rgba(255,255,255,.72); line-height: 1.68; }
 .repo-link.light { color: #96e0d3; }
+.meme-proof { display: grid; grid-template-columns: minmax(280px,.72fr) minmax(320px,1.28fr); gap: clamp(30px,7vw,92px); align-items: center; margin-top: clamp(64px,9vw,110px); padding-top: clamp(42px,6vw,72px); border-top: 1px solid rgba(255,255,255,.18); }
+.meme-image { display: block; overflow: hidden; border: 1px solid rgba(255,255,255,.22); border-radius: 8px; background: #fff; }
+.meme-image img { width: 100%; aspect-ratio: 1240 / 1269; object-fit: cover; transition: transform .35s ease; }
+.meme-image:hover img { transform: scale(1.012); }
+.meme-copy h3 { max-width: 620px; font-size: clamp(2.2rem,5vw,4.5rem); line-height: .98; }
+.meme-copy > p:not(.kicker) { max-width: 510px; margin: 24px 0; color: rgba(255,255,255,.72); font-size: 1.05rem; line-height: 1.65; }
 .contact { background: #e9ece8; }
 .contact-links { display: grid; border-top: 1px solid #c8ceca; }
 .contact-links a { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid #c8ceca; text-decoration: none; }
@@ -113,7 +119,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
   .hero-inner { padding-left: 18px; }
   .hero h1 { font-size: clamp(3.8rem,19vw,6rem); }
   .hero-proof { display: none; }
-  .intro-grid, .section-head, .writing-inner, .contact-grid, .project-card.featured, .digest-card { grid-template-columns: 1fr; }
+  .intro-grid, .section-head, .writing-inner, .meme-proof, .contact-grid, .project-card.featured, .digest-card { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
   .compact { grid-column: auto; }
@@ -133,5 +139,5 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .project-image img, .repo-link span { transition: none; }
+  .project-image img, .meme-image img, .repo-link span { transition: none; }
 }
