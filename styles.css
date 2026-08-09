@@ -103,9 +103,9 @@ h3 { margin: 0; font-size: 1.35rem; line-height: 1.25; }
 .case-links a, .build-links a { color: var(--green); font-size: .82rem; font-weight: 800; }
 
 .selected-section { overflow: hidden; background: var(--white); }
-.work-samples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.work-samples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
 .work-sample { min-height: 230px; display: flex; flex-direction: column; padding: 25px 24px 25px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
-.work-sample:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
+.work-sample + .work-sample { padding-left: 24px; border-left: 1px solid var(--line); }
 .work-sample h3 { font-size: 1.22rem; }
 .work-sample p { margin: 13px 0 26px; color: var(--muted); font-size: .85rem; line-height: 1.56; }
 .work-sample b { margin-top: auto; color: var(--green); font-size: .78rem; }
@@ -184,6 +184,9 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 25px
   .role-track:nth-child(4) { border-top: 1px solid var(--line); }
   .case-study { grid-template-columns: 1fr; gap: 34px; }
   .case-study.reverse .case-visual { order: 0; }
+  .work-samples { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .work-sample + .work-sample { padding-left: 0; border-left: 0; }
+  .work-sample:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--line); }
   .build-item { grid-template-columns: 1fr; }
   .build-item.reverse > :first-child { order: 0; }
   .build-image { min-height: 360px; }
@@ -204,7 +207,7 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 25px
   .section-heading, .contact-grid { grid-template-columns: 1fr; gap: 24px; }
   h2 { font-size: 2.55rem; }
   .work-samples { grid-template-columns: 1fr; }
-  .work-sample, .work-sample:nth-child(even) { min-height: 0; padding: 24px 0; border-left: 0; }
+  .work-sample, .work-sample + .work-sample, .work-sample:nth-child(even) { min-height: 0; padding: 24px 0; border-left: 0; }
   .resume-options { grid-template-columns: 1fr; }
   .resume-options > a, .resume-options > a + a { min-height: 0; padding: 25px 0; border-left: 0; }
   .resume-options span { margin-bottom: 24px; }
