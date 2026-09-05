@@ -67,12 +67,12 @@ CVS = [
         ],
         "independent": [
             "Write about crypto markets, products and communities, and create social posts that have reached six-figure audiences.",
-            "Build personal AI workflows for market analysis, community monitoring, content and publishing.",
+            "Build personal AI workflows for market analysis, personal knowledge, content and publishing.",
         ],
         "links": [
             ("Community Manager", "https://x.com/0xgoodie/status/2075661908217364766"),
             ("Perp DEX research", "https://manvinder.substack.com/p/perp-dexs-cryptos-clearest-pmf"),
-            ("Meme Scout", "https://github.com/punkypunk936-coder/meme-scout-agent"),
+            ("Telegram Brain", "https://github.com/punkypunk936-coder/telegram-brain"),
         ],
         "context": "Discord, Telegram, X, DeFi products, community analytics, campaign reporting, launch messaging and AI-assisted content workflows.",
     },

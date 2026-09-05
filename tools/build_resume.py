@@ -263,9 +263,9 @@ def build_resume():
         doc,
         "Built for my own use",
         [
-            ("Meme Scout Agent", "https://github.com/punkypunk936-coder/meme-scout-agent"),
             ("Crypto Trading Agent", "https://github.com/punkypunk936-coder/crypto-trading-agent"),
             ("X-to-Substack", "https://github.com/punkypunk936-coder/x-to-substack-pipeline"),
+            ("Telegram Brain", "https://github.com/punkypunk936-coder/telegram-brain"),
         ],
     )
     linked_list_line(

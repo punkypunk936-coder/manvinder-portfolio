@@ -131,21 +131,11 @@ h3 { margin: 0; font-size: 1.35rem; line-height: 1.25; }
 .build-item.reverse > :first-child { order: 2; }
 .build-image { min-height: 410px; overflow: hidden; background: #111; }
 .build-image img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+.build-image.telegram-brain-preview { background: #0f1118; }
+.build-image.telegram-brain-preview img { object-fit: contain; object-position: center; }
 .build-copy { display: flex; flex-direction: column; justify-content: center; padding: 42px; }
 .build-copy h3 { font-size: 1.9rem; }
 .build-copy p { margin: 18px 0 0; color: var(--muted); line-height: 1.65; }
-.build-console { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-content: center; padding: 38px; background: var(--dark); }
-.build-console div { min-height: 134px; display: flex; flex-direction: column; padding: 16px; border: 1px solid rgba(255, 255, 255, .18); color: #fff; }
-.build-console span { color: rgba(255, 255, 255, .4); font-size: .68rem; }
-.build-console strong { margin-top: auto; font-size: .95rem; }
-.build-console small { margin-top: 6px; color: rgba(255, 255, 255, .58); line-height: 1.35; }
-.compact-build { min-height: 340px; }
-.library-visual { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; align-content: center; padding: 42px; background: #202629; }
-.library-visual span { padding-bottom: 10px; border-bottom: 2px solid #5f6b70; color: #d9dfe1; font-size: .75rem; text-align: center; }
-.library-visual span:first-child { border-color: #3d9c8c; color: #8bd5c7; }
-.library-visual i { aspect-ratio: 1 / 1; background: #384247; }
-.library-visual i:nth-of-type(2), .library-visual i:nth-of-type(5) { background: #53665d; }
-.library-visual i:nth-of-type(3), .library-visual i:nth-of-type(7) { background: #2e5b65; }
 
 .experience-section { background: var(--paper); }
 .experience-list { border-top: 1px solid var(--line); }
@@ -247,9 +237,6 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 25px
   .build-copy { padding: 28px 24px; }
   .build-copy h3 { font-size: 1.55rem; }
   .build-image { min-height: 260px; }
-  .build-console { padding: 20px; }
-  .build-console div { min-height: 115px; }
-  .library-visual { padding: 25px; }
   .contact-links a { flex-direction: column; gap: 5px; }
   .contact-links strong { text-align: left; overflow-wrap: anywhere; }
   footer { flex-direction: column; }
